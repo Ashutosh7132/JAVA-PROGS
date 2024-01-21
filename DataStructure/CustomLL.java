@@ -4,10 +4,13 @@ public class CustomLL {
 
         LinkedList linkedList = new LinkedList(1);
 
+
+        linkedList.append(2);
+        linkedList.append(3);
+        linkedList.append(4);
         linkedList.getHead();
         linkedList.getTail();
         linkedList.getLength();
-        linkedList.append(2);
         linkedList.printList();
 
     }
