@@ -53,4 +53,22 @@ public class LinkedList {
         length++;
     }
 
+    public Node removeLast(int length){
+        if(length == 0){return null;}
+        Node pre = head;
+        Node temp = head;
+        while(temp.next != null){
+            pre = temp;
+            temp = temp.next;
+        }
+        tail = pre;
+        tail.next = null;
+        length--;
+        if(length == 0){
+            pre = null;
+            temp = null;
+        }
+        return temp;
+    }
+
 }

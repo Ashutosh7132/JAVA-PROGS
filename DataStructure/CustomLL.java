@@ -12,6 +12,8 @@ public class CustomLL {
         linkedList.getTail();
         linkedList.getLength();
         linkedList.printList();
+        System.out.println(linkedList.removeLast(4).value);
+        linkedList.getLength();
 
     }
 }
