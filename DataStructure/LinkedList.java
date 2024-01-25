@@ -4,7 +4,7 @@ public class LinkedList {
     private Node tail;
     private int length;
 
-    class Node {
+    static class Node {
         int value;
         Node next;
 
@@ -43,13 +43,12 @@ public class LinkedList {
         Node newNode = new Node(value);
         if(length==0){
             head = newNode;
-            tail = newNode;
         }
         else{
             tail.next = newNode;
-            tail = newNode;
 
         }
+        tail = newNode;
         length++;
     }
 
@@ -65,7 +64,6 @@ public class LinkedList {
         tail.next = null;
         length--;
         if(length == 0){
-            pre = null;
             temp = null;
         }
         return temp;
