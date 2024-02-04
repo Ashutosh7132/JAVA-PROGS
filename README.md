@@ -1,1 +1,1 @@
-Data Structures and Java-8 programs parctice set
+Data Structures and Java-8 programs practice set
